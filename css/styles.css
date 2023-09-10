@@ -23,6 +23,8 @@ body{
     flex-flow: column wrap;
 }
 
+
+
 .container{
     background-color: var(--very-dark-blue-card);
     border-radius: 25px;
@@ -47,6 +49,7 @@ body{
     left: 48%;
     opacity: 0;
 }
+
 .main-image:hover .view-icon{
     opacity: 1;
 }
@@ -146,3 +149,22 @@ h1:hover{
     color: var(--cyan);
 }
 
+@media (min-width:1440px){
+    .equilibrium{
+        width: 100%;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 500px;
+        margin-top: 80px;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
